@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How the Web Works Exercise</title>
+    <link
+      rel="stylesheet"
+      href="web.css
+    "
+    />
+  </head>
+  <body>
+    <h1>How the Web Works Exercises</h1>
+    <hr />
+    <h2>Part One: Solidify Terminology</h2>
+    <ul>
+      <li>
+        HTTP is an acronym for Hyper Text Transfer Protocal. This is how
+        computers talk to servers to retrieve information. This governs how
+        clients get data from, or send data to a server.
+      </li>
+      <li>
+        A URL is a uniform Resource Locater and supplies the request
+        information/ address a user is trying to reach.
+      </li>
+      <li>
+        DNS (Domain Name System) is the naming system used to reach and ID
+        computers through the internet. System that takes human readable URL's
+        and converts them into IP addresses.
+      </li>
+      <li>
+        A query string is a "search" attribute added to the URL used to filter
+        for intformation specifically queried. Using key-value pairs, format
+        ?key1=value1&key2=value2...
+      </li>
+      <li>
+        The HTTP verb "GET" is retrieving information and is not impacting
+        /altering the server otherwise. The verb "POST" is impacting the server.
+      </li>
+      <li>
+        An HTTP response is a response from the server (using HTTP protocal)
+        after recieing "GET" commands. A response varies based on the request,
+        an example can simply be returning the HTML page upon a user searching
+        for the home page.
+      </li>
+      <li>
+        An HTTP header provides additional informationabout the request or the
+        response. For instance, request headers: accept, cookies, cache-control.
+        A response header includse content-type, last-modified-, cahce-control.
+      </li>
+      <li>
+        Your browser “resolves” the name into an IP address using DNS Your
+        browser makes a request to that IP address, including headers (info
+        about browser, any previous cookies, and other things) The server sends
+        a response (typically, HTML, with a status code (200 if it was
+        sucessful) The browser makes a DOM from that HTML, and finds any other
+        resources needed (images, CSS, JavaScript, etc) The browser makes
+        separate HTTP requests for those resources and receives response from
+        the server for each request.
+      </li>
+    </ul>
+
+    <hr />
+    <h3>Part Two: Practice Tools</h3>
+    <p>Done through command line.</p>
+
+    <hr />
+    <h4>Part Three: Explore Dev Tool</h4>
+    <form action="http://127.0.0.1:5500/index.html" method="get">
+      <label for="name" id="name"
+        >Please enter your name
+        <input type="text" id="name" />
+      </label>
+      <label for="birthday" id="birthday"
+        >Date of Birth
+        <input type="date" name="birthday" id="birthday" />
+      </label>
+      <button type="submit" value="submit">Submit</button>
+    </form>
+
+    <hr />
+    <h5>Part Four: Explore the URL API</h5>
+    <p>Done through Dev Tools</p>
+    <script src="web.js"></script>
+  </body>
+</html>
